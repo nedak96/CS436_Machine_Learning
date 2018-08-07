@@ -1,4 +1,4 @@
-Python program that uses Naive Bayes or logarithmic regression to determine whether a file is spam or ham.  It includes the option to use a stop word filter and a simple feature selector that just removes words based on frequency.
+Python program that uses Naive Bayes or logistic regression to determine whether a file is spam or ham.  It includes the option to use a stop word filter and a simple feature selector that just removes words based on frequency.
 
 To run: python hamOrSpam.py <algorithm: nb/lr> <stop word filter: yes/no> <feature selector: yes/no>
 

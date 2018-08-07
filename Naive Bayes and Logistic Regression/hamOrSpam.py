@@ -4,7 +4,7 @@ import sys
 import os
 from math import log, exp
 
-#get parameters lr = logarithmic regression (naive bayes otherwise), stop = use stop words, fs = use feature selector
+#get parameters lr = logistic regression (naive bayes otherwise), stop = use stop words, fs = use feature selector
 stop = True
 lr = False
 fs = False
@@ -124,9 +124,9 @@ if not lr:
 			nCorrect += 1
 	print nCorrect/nTotal
 
-#Run data using logarithmic regression
+#Run data using logistic regression
 else:
-	#Use logarithmic regression to set values to each word for both possible outcomes.  Repeated 100 times for convergence with lambda = .01
+	#Use logistic regression to set values to each word for both possible outcomes.  Repeated 100 times for convergence with lambda = .01
 	nums = [[0 for j in range(len(words)+1)] for i in range(2)]
 	nums[0][0] = 1
 	nums[1][0] = 1
